@@ -4,19 +4,36 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>Node.js | Hexo</title>
+    <title>pacman | Hexo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
     
     <meta name="author" content="John Doe">
     
-    <meta name="description" content="Node.js 是 ?
-
-Javascript的运行环境而不是javacript的应用程序，也就是说Node.js最终解释执行你编写的Javacript代码
-
-Node.js 特点
-
-采用Google Chrome V8引擎，性能很好
-因为是后台运行(不像浏览器里的运行环境有安全考虑)，所以提供更为">
+    <meta name="description" content="Pacman
+Pacman是hexo主题家族中非常受欢迎的一个，你可以在这里找到它。
+目录结构
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+.
+├── languages          #多语言
+|   ├── default.yml    #">
     
     
     
@@ -73,15 +90,15 @@ Node.js 特点
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2014/05/31/nodejs/" title="Node.js" itemprop="url">Node.js</a>
+      <a href="/2014/06/01/pacman/" title="pacman" itemprop="url">pacman</a>
   </h1>
   <p class="article-author">By
     
       <a href="http://yoursite.com" title="John Doe">John Doe</a>
     </p>
   <p class="article-time">
-    <time datetime="2014-05-31T13:01:53.000Z" itemprop="datePublished">May 31 2014</time>
-    Updated:<time datetime="2014-05-31T13:38:58.000Z" itemprop="dateModified">May 31 2014</time>
+    <time datetime="2014-06-01T01:45:00.000Z" itemprop="datePublished">Jun 1 2014</time>
+    Updated:<time datetime="2014-06-01T02:22:00.000Z" itemprop="dateModified">Jun 1 2014</time>
     
   </p>
 </header>
@@ -90,40 +107,58 @@ Node.js 特点
 		
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">Contents</strong>
-		<ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Node-js_是_?"><span class="toc-number">1.</span> <span class="toc-text">Node.js 是 ?</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Node-js_特点"><span class="toc-number">2.</span> <span class="toc-text">Node.js 特点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#代码样例"><span class="toc-number">3.</span> <span class="toc-text">代码样例</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#参考"><span class="toc-number">4.</span> <span class="toc-text">参考</span></a></li></ol>
+		<ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Pacman"><span class="toc-number">1.</span> <span class="toc-text">Pacman</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#目录结构"><span class="toc-number">2.</span> <span class="toc-text">目录结构</span></a></li></ol>
 		</div>
 		
-		<h3 id="Node-js_是_?">Node.js 是 ?</h3>
-<ol>
-<li>Javascript的<strong>运行环境</strong>而不是javacript的应用程序，也就是说Node.js最终解释执行你编写的Javacript代码</li>
-</ol>
-<h3 id="Node-js_特点">Node.js 特点</h3>
-<ol>
-<li>采用Google Chrome V8引擎，性能很好</li>
-<li>因为是后台运行(不像浏览器里的运行环境有安全考虑)，所以提供更为丰富的API，如文件操作等</li>
-<li>事件驱动，异步编程，高并发支持好</li>
-</ol>
-<h3 id="代码样例">代码样例</h3>
-<p><figure class="highlight js"><table><tr><td class="gutter"><pre>1
+		<h3 id="Pacman">Pacman</h3>
+<p>Pacman是<a href="https://github.com/tommy351/hexo/wiki/Themes" target="_blank">hexo主题家族</a>中非常受欢迎的一个，你可以在<a href="https://github.com/A-limon/pacman" target="_blank">这里</a>找到它。</p>
+<h3 id="目录结构">目录结构</h3>
+<p><figure class="highlight python"><table><tr><td class="gutter"><pre>1
 2
 3
 4
 5
-</pre></td><td class="code"><pre><span class="keyword">var</span> http = <span class="built_in">require</span>(<span class="string">'http'</span>);
-http.createServer(<span class="function"><span class="keyword">function</span> <span class="params">(req, res)</span> {</span>
-    res.writeHead(<span class="number">200</span>, {<span class="string">'Content-Type'</span>: <span class="string">'text/plain'</span>});
-    res.end(<span class="string">'Hello World\n'</span>);
-}).listen(<span class="number">9090</span>, <span class="string">"127.0.0.1"</span>);
-</pre></td></tr></table></figure><br>上面代码在本地9090端口建立服务，对于任何请求返回”Hello World”。</p>
-<h3 id="参考">参考</h3>
-<p><a href="http://www.infoq.com/cn/articles/what-is-nodejs" target="_blank">深入浅出Node.js（一）：什么是Node.js</a></p>
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+</pre></td><td class="code"><pre>.
+├── languages          <span class="comment">#多语言</span>
+|   ├── default.yml    <span class="comment">#默认语言</span>
+|   ├── zh-CN.yml
+|   └── zh-TW.yml      <span class="comment">#中文语言</span>
+├── layout             <span class="comment">#布局，根目录下的*.ejs文件是对主页，分页，存档等的控制</span>
+|   ├── _partial       <span class="comment">#局部的布局，此目录下的*.ejs是对头尾等局部的控制</span>
+|   └── _widget        <span class="comment">#小挂件的布局，页面下方小挂件的控制</span>
+├── source             <span class="comment">#源码</span>
+|   ├── css            <span class="comment">#css源码 </span>
+|   |   ├── _base      <span class="comment">#*.styl基础css</span>
+|   |   ├── _partial   <span class="comment">#*.styl局部css</span>
+|   |   └── style.styl <span class="comment">#*.styl引入需要的css源码</span>
+|   ├── fonts      <span class="comment">#字体</span>
+|   ├── images     <span class="comment">#图片</span>
+|   ├── fancybox       <span class="comment">#fancybox效果源码</span>
+|   └── js             <span class="comment">#javascript源代码</span>
+├── _config.yml        <span class="comment">#主题配置文件</span>
+└── README.md          <span class="comment">#用GitHub的都知道</span>
+</pre></td></tr></table></figure><br>虽然引入了基于Node.js的<a href="">Ejs</a>与<a href="http://learnboost.github.io/stylus/" target="_blank">Stylus</a>，但根本上来说依然只用到HTML+CSS+JavaScitpt。</p>
   
 	</div>
 		<footer class="article-footer clearfix">
 
   <div class="article-tags">
   
-  <span></span> <a href="/tags/Node.js/">Node.js</a>
+  <span></span> <a href="/tags/pacman hexo theme/">pacman hexo theme</a>
   </div>
 
 
@@ -131,7 +166,7 @@ http.createServer(<span class="function"><span class="keyword">function</span> <
 
 <div class="article-share" id="share">
 
-  <div data-url="http://yoursite.com/2014/05/31/nodejs/" data-title="Node.js | Hexo" data-tsina="null" class="share clearfix">
+  <div data-url="http://yoursite.com/2014/06/01/pacman/" data-title="pacman | Hexo" data-tsina="null" class="share clearfix">
   </div>
 
 </div>
@@ -141,13 +176,21 @@ http.createServer(<span class="function"><span class="keyword">function</span> <
 <nav class="article-nav clearfix">
  
  <div class="prev" >
- <a href="/2014/06/01/pacman/" title="pacman">
+ <a href="/2014/06/01/css-media/" title="css media">
   <strong>PREVIOUS:</strong><br/>
   <span>
-  pacman</span>
+  css media</span>
 </a>
 </div>
 
+
+<div class="next">
+<a href="/2014/05/31/nodejs/"  title="Node.js">
+ <strong>NEXT:</strong><br/> 
+ <span>Node.js
+</span>
+</a>
+</div>
 
 </nav>
 
@@ -157,7 +200,7 @@ http.createServer(<span class="function"><span class="keyword">function</span> <
 
   <div id="toc" class="toc-aside">
   <strong class="toc-title">Contents</strong>
-  <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Node-js_是_?"><span class="toc-number">1.</span> <span class="toc-text">Node.js 是 ?</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Node-js_特点"><span class="toc-number">2.</span> <span class="toc-text">Node.js 特点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#代码样例"><span class="toc-number">3.</span> <span class="toc-text">代码样例</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#参考"><span class="toc-number">4.</span> <span class="toc-text">参考</span></a></li></ol>
+  <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Pacman"><span class="toc-number">1.</span> <span class="toc-text">Pacman</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#目录结构"><span class="toc-number">2.</span> <span class="toc-text">目录结构</span></a></li></ol>
   </div>
 
 <div id="asidepart">
